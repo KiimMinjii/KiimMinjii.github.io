@@ -11,6 +11,14 @@
     font-style: normal;
 }
 
+/* 조선일보명조 */
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* body */
 body {
     background-color: #f0ecea;
@@ -19,26 +27,51 @@ body {
 .contain {
     width: 1440px;
     margin: 0 auto;
-    background-color: aquamarine;
 }
 
 .contain2 {
     height: 100%;
     width: 1196px;
-    background-color: rgb(114, 215, 255);
     margin: 0 auto;
 }
 /* ---------------헤더-------------- */
 header {
     width: 100%;
-    min-height: 60px;
+    min-height: 50px;
     border-bottom: 1px solid #3b332d;
 }
 
+.head_text > h4 {
+    float: left;
+    line-height: 50px;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+    color: #131211;
+}
+.text_2 {
+    float: right !important;
+}
+
+/* ㅎㅔ더2 */
 #header_2 {
     width: 100%;
     min-height: 40px;
     border-bottom: 1px solid #3b332d;
+}
+.head_text > h5 {
+    float: left;
+    line-height: 40px;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+    color: #131211;
+}
+
+.text_3 {
+    float: right !important;
+}
+
+.text_4 {
+    margin-left: 600px;
 }
 
 /* ---------------q본문-------------- */
@@ -49,10 +82,139 @@ header {
 #content_4 {
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid #3b332d;
+    border-bottom: 2px solid #3b332d;
 }
 
-/* 푸터 */
+/* --------메인---------- */
+#title {
+    font-family: 'Markazi Text', serif;
+    font-size: 300px;
+    line-height: 180px;
+    margin: 72px 0px 12px 0px;
+    color: #131211;
+}
+
+#sub_title {
+    margin-bottom: 32px;
+    font-family: 'Markazi Text', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+#main_img {
+    min-height: 474px;
+    background-image: url('../source/main.png');
+    background-size: contain;
+}
+
+#con_text {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 14px;
+    line-height: 24px;
+    margin: 32px 0px 60px 0px;
+}
+
+/* --------프로필---------- */
+#content_2 {
+    height: 370px;
+}
+#profile,
+#work_type {
+    width: 466px;
+    min-height: 212px;
+    margin-top: 72px;
+}
+
+#profile {
+    float: left;
+    background-image: url('../source/profile_text.svg');
+    background-repeat: no-repeat;
+}
+
+#work_type {
+    float: right;
+    background-image: url('../source/workType_text.svg');
+    background-repeat: no-repeat;
+}
+
+#line {
+    width: 2px;
+    height: 285px;
+    background-color: #3b332d;
+    float: left;
+    margin-left: 132px;
+    margin-top: 44px;
+}
+
+/* --------스킬---------- */
+#content_3 {
+    clear: both;
+    height: 900px;
+}
+
+#skill {
+    width: 350px;
+    margin-top: 52px;
+    height: 60px;
+    background-image: url('../source/skill_title.svg');
+    background-size: 350px 60px;
+    background-repeat: no-repeat;
+    margin-left: 35%;
+}
+
+#pub_skill,
+#des_skill {
+    width: 466px;
+    min-height: 715px;
+    margin-top: 32px;
+}
+
+#line2 {
+    width: 2px;
+    height: 730px;
+    background-color: #3b332d;
+    float: left;
+    margin-left: 132px;
+    margin-top: 32px;
+}
+
+#pub_skill {
+    float: left;
+    background-image: url('../source/publishSkill_text.svg');
+    background-repeat: no-repeat;
+}
+
+#des_skill {
+    float: right;
+    background-image: url('../source/DSkill_Text.svg');
+    background-repeat: no-repeat;
+}
+
+/* --------포트폴리오---------- */
+#content_4 {
+    clear: both;
+    height: 1000px;
+}
+
+#portfolio {
+    width: 350px;
+    margin-top: 40px;
+    height: 120px;
+    background-image: url('../source/protfolio_title.svg');
+    background-size: 350px 120px;
+    background-repeat: no-repeat;
+    margin-left: 38%;
+}
+
+#project {
+    width: 100%;
+    height: 780px;
+    background-image: url('../source/portfoliio_text.svg');
+    background-repeat: no-repeat;
+    margin-top: 32px;
+}
+
+/* -----------푸터------------- */
 #footer_2 {
     border-top: 1px solid #3b332d;
 }
